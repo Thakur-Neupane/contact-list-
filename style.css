@@ -1,0 +1,10 @@
+.wrapper {
+  background: url(./assets/img1.png) no-repeat center;
+  background-size: cover;
+}
+.phone {
+  height: 550px;
+  width: 300px;
+  background: url(./assets/code.jpg) no-repeat center;
+  background-size: cover;
+}
