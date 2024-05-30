@@ -8,3 +8,55 @@
   background: url(./assets/code.jpg) no-repeat center;
   background-size: cover;
 }
+
+/* Home Screen  */
+
+.slider {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+.slider:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.slider::-webkit-slider-thumb {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -webkit-appearance: none;
+  appearance: none;
+  background: radial-gradient(rgb(236, 103, 236), blue);
+}
+
+.slider::-moz-range-thumb {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -webkit-appearance: none;
+  appearance: none;
+  background: radial-gradient(rgb(236, 103, 236), blue);
+}
+
+#label {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  pointer-events: none;
+  animation: slideAnimation 3s ease-in-out infinite;
+}
+
+@keyframes slideAnimation {
+  0%,
+  100% {
+    color: black;
+    filter: drop-shadow(0 0 10px blue);
+  }
+
+  50% {
+    color: black;
+    filter: drop-shadow(0 0 10px blue);
+  }
+}
